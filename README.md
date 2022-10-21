@@ -134,8 +134,8 @@ $ (crontab -l; echo "0 0 * * * /usr/bin/python3 /app/do-api-volume-snapshot/do_a
 A message will be printed on the creation and the deletion of volume snapshot. 
 
 ```
-2022-06-22-00-00-01 is created at 2022-06-22T00:00:02Z
-2022-06-21-00-00-01 is removed
+Snapshot 2022-10-21-00-00-02 is created at 2022-10-21T00:00:02Z
+Snapshot 2022-10-20-00-00-02 is removed at 2022-10-21T00:00:06Z
 ```
 
 ## Reference

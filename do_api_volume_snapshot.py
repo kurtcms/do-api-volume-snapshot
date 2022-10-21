@@ -53,8 +53,8 @@ class Main():
                         'name': time_stamp,
                         'tags': ['do_api_volume_snapshot']
                     })
-        print(snapshot['snapshot']['name'] + ' is created at ' +
-            snapshot['snapshot']['created_at'])
+        print('Snapshot ' + snapshot['snapshot']['name'] +
+            ' is created at ' + snapshot['snapshot']['created_at'])
 
     def rotate_snapshot(self):
         '''Rotate the volume snapshot'''
@@ -67,7 +67,9 @@ class Main():
             for i in range(list_snapshot['meta']['total'] - self.snapshot):
                 self._delete_snapshot_by_snapshot_id(
                     list_snapshot_sorted[i]['id'])
-                print(list_snapshot_sorted[i]['name'] + ' is removed')
+                print('Snapshot ' + list_snapshot_sorted[i]['name'] +
+                ' is removed at ' +
+                time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()))
 
 if __name__ == '__main__':
     conn = Main()
