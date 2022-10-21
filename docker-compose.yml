@@ -8,11 +8,11 @@ services:
     # in the current working directory on the Docker host
     volumes:
       - .:/app
-    # Limit logs to 3 files with a max size of 100Mb each
+    # Limit logs to 5 files with a max size of 20Mb each
     logging:
       driver: 'json-file'
       options:
-        max-size: '20'
+        max-size: '20m'
         max-file: '5'
     # Cron in foreground as the entry point for the container
     command: cron -f
