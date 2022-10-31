@@ -9,7 +9,7 @@ It does the following:
 
 A detailed walk-through is available [here](https://kurtcms.org/digitalocean-api-create-and-rotate-volume-snapshot/).
 
-<img src="https://kurtcms.org/git/do-api-volume-snapshot/do-api-volume-snapshot-screenshot.png" width="550">
+<img src="https://github.com/kurtcms/do-api-volume-snapshot/blob/master/screenshot.png" width="550">
 
 ## Table of Content
 
