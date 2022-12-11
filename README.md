@@ -17,6 +17,8 @@ A detailed walk-through is available [here](https://kurtcms.org/digitalocean-api
   - [Crontab](#crontab)
   - [Docker Container](#docker-container)
 	  - [Docker Compose](#docker-compose)
+      - [Install](#install)
+      - [Up and Down](#up-and-down)
 	  - [Build and Run](#build-and-run)
   - [Standalone Python Script](#standalone-python-script)
     - [Dependencies](#dependencies)
@@ -78,13 +80,26 @@ Packaged as a container, the app is a standalone, executable package that may be
 
 #### Docker Compose
 
-With Docker Compose, the app may be provisioned with a single command. Be sure to have [Docker Compose](https://docs.docker.com/compose/install/) installed.
+With Docker Compose, the app may be provisioned with a single command. 
+
+##### Install
+
+Install [Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) with the Bash script that comes with app.
+
+```shell
+$ chmod +x /app/do-api-volume-snapshot/docker-compose/docker-compose.sh \
+    && /app/do-api-volume-snapshot/docker-compose/docker-compose.sh
+```
+
+##### Up and Down
+
+Start the containers with Docker Compose.
 
 ```shell
 $ docker-compose up -d
 ```
 
-Stopping the container is as simple as a single command.
+Stopping the containers is as simple as a single command.
 
 ```shell
 $ docker-compose down
