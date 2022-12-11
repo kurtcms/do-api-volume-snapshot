@@ -5,7 +5,7 @@ This Python app is containerised with [Docker Compose](https://docs.docker.com/c
 It does the following:
 
 1. Call the [DigitalOcean (DO) API](#reference) to create a snapshot from a volume; and
-2. Rotate the volume snapshot by removing the obsolete one(s). 
+2. Rotate the volume snapshot by removing the obsolete one(s).
 
 A detailed walk-through is available [here](https://kurtcms.org/digitalocean-api-create-and-rotate-volume-snapshot/).
 
@@ -36,7 +36,7 @@ Get started in three simple steps:
 
 Download a copy of the app with `git clone`
 ```shell
-$ git clone https://github.com/kurtcms/do-api-volume-snapshot /app/
+$ git clone https://github.com/kurtcms/do-api-volume-snapshot /app/do-api-volume-snapshot/
 ```
 
 ### Environment Variables
@@ -64,7 +64,7 @@ DO_SNAPSHOT = 1
 
 ### Crontab
 
-By default the app is scheduled with [cron](https://linux.die.net/man/8/cron) to create and rotate the volume snapshot everyday, with `stdout` and `stderr` redirected to the main process for `Docker logs`.  
+By default the app is scheduled with [cron](https://linux.die.net/man/8/cron) to create and rotate the volume snapshot everyday, with `stdout` and `stderr` redirected to the main process for `Docker logs`.
 
 Modify the `crontab` if a different schedule is required.
 
@@ -98,7 +98,7 @@ Otherwise the Docker image can also be built manually.
 $ docker build -t do_api_volume_snapshot /app/do-api-volume-snapshot/
 ```
 
-Run the image with Docker once it is ready.  
+Run the image with Docker once it is ready.
 
 ```shell
 $ docker run -it --rm --name do_api_volume_snapshot do_api_volume_snapshot
