@@ -17,8 +17,6 @@ A detailed walk-through is available [here](https://kurtcms.org/digitalocean-api
   - [Crontab](#crontab)
   - [Docker Container](#docker-container)
 	  - [Docker Compose](#docker-compose)
-      - [Install](#install)
-      - [Up and Down](#up-and-down)
 	  - [Build and Run](#build-and-run)
   - [Standalone Python Script](#standalone-python-script)
     - [Dependencies](#dependencies)
@@ -82,16 +80,12 @@ Packaged as a container, the app is a standalone, executable package that may be
 
 With Docker Compose, the app may be provisioned with a single command. 
 
-##### Install
-
 Install [Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) with the Bash script that comes with app.
 
 ```shell
 $ chmod +x /app/do-api-volume-snapshot/docker-compose/docker-compose.sh \
     && /app/do-api-volume-snapshot/docker-compose/docker-compose.sh
 ```
-
-##### Up and Down
 
 Start the containers with Docker Compose.
 
@@ -144,7 +138,7 @@ $ (crontab -l; echo "0 0 * * * /usr/bin/python3 /app/do-api-volume-snapshot/do_a
 
 ## Docker Logs
 
-A message will be printed on the creation and the deletion of volume snapshot. 
+A message will be printed on the creation and the deletion of volume snapshot.
 
 ```
 Snapshot 2022-10-21-00-00-02 is created at 2022-10-21T00:00:02Z
