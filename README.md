@@ -125,6 +125,8 @@ In which case be sure to install the following required libraries for the `do_ap
 1. [Requests](https://github.com/psf/requests)
 2. [Python-dotenv](https://github.com/theskumar/python-dotenv)
 
+Install them with [`pip3`](https://github.com/pypa/pip):
+
 ```shell
 $ pip3 install requests python-dotenv
 ```
