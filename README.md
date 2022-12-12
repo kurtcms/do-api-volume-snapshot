@@ -81,7 +81,7 @@ Packaged as a container, the app is a standalone, executable package that may be
 
 With Docker Compose, the app may be provisioned with a single command. 
 
-Install [Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) with the Bash script that comes with app.
+Install [Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) with the [Bash](https://github.com/gitGNU/gnu_bash) script that comes with app.
 
 ```shell
 $ chmod +x /app/do-api-volume-snapshot/docker-compose/docker-compose.sh \
