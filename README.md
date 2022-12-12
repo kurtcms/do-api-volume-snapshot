@@ -34,10 +34,10 @@ Get started in three simple steps:
 
 ### Git Clone
 
-Download a copy of the app with `git clone`.
+Download a copy of the app with `git clone`. Be sure to pass the `--recurse-submodules` argument to initialise and update each submodule in the repository.
 
 ```shell
-$ git clone https://github.com/kurtcms/do-api-volume-snapshot /app/do-api-volume-snapshot/
+$ git clone --recurse-submodules https://github.com/kurtcms/do-api-volume-snapshot /app/do-api-volume-snapshot/
 ```
 
 ### Environment Variables
