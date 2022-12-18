@@ -29,7 +29,7 @@ A detailed walk-through is available [here](https://kurtcms.org/digitalocean-api
 Get started in three simple steps:
 
 1. [Download](#git-clone) a copy of the app;
-2. Create the [environment variables](#environment-variables) for the DO authentication and modify the [crontab](#crontab) if needed; and
+2. Create the [environment variables](#environment-variables) for authentication and modify the [crontab](#crontab) if needed; and
 3. [Docker Compose](#docker-compose) or [build and run](#build-and-run) the image manually to start the app, or alternatively run the Python script as a standalone service.
 
 ### Git Clone
