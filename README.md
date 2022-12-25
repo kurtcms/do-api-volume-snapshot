@@ -91,13 +91,13 @@ $ chmod +x /app/do-api-volume-snapshot/docker-compose/docker-compose.sh \
 Start the containers with Docker Compose.
 
 ```shell
-$ docker-compose up -d
+$ docker-compose -f /app/do-api-volume-snapshot/docker-compose.yml up -d
 ```
 
 Stopping the containers is as simple as a single command.
 
 ```shell
-$ docker-compose down
+$ docker-compose -f /app/do-api-volume-snapshot/docker-compose.yml down
 ```
 
 #### Build and Run
